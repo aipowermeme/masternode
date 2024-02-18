@@ -98,18 +98,26 @@ AcY9DGdLK8egVrUBS9ipoexuFnmRNjQvdA
 
 
 Prepare the ProRegTx transaction by modifying the following line.
+
 protx register_prepare a3d7e2fa6445c2fb3e6a5c01e654e2861ea0ae238f25e7200bff5adb247dfa48 1 67.1.246.60:16100 APVpUBhmUW1GaZhz1wCS5H4Y2RRFnZ8AcE 064bb1741f4707cfe3629176857c41e0d23cbe751061fe5d0d67b506db10c8f3f6f2b684c3cec8e4a128193a001d12e9 AX9yMNCKNcinGcdmrehcYbLsXwNUcGUmEM 0 AcY9DGdLK8egVrUBS9ipoexuFnmRNjQvdA AWRC4W8ajZ23gZs9ooEgJp7MyQMAd5sque
 
 
 
 
 fdab9dff1ff9caf5d291905ad43b9f7d69775189d4d22cb085d7fedd94ea1c6a - Transaction id from the RPC command “masternode outputs”.
+
 1 - Single digit from the RPC command “masternode outputs”.
+
 67.1.246.60:16100 - External IPv4 address of your VPS.
+
 APVpUBhmUW1GaZhz1wCS5H4Y2RRFnZ8AcE - Address of the owner of the masternode.
+
 064bb1741f4707cfe3629176857c41e0d23cbe751061fe5d0d67b506db10c8f3f6f2b684c3cec8e4a128193a001d12e9 - “public” value from the RPC command “bls generate”.
+
 AX9yMNCKNcinGcdmrehcYbLsXwNUcGUmEM - Address used for proposal voting.
+
 AcY9DGdLK8egVrUBS9ipoexuFnmRNjQvdA - Address to receive the masternode reward.
+
 AWRC4W8ajZ23gZs9ooEgJp7MyQMAd5sque - Address to where you send the masternode amount fee.
 
 
@@ -128,11 +136,13 @@ Example output
 
 
 Sign the ProRegTx transaction by modifying the following line.
+
 signmessage "AWRC4W8ajZ23gZs9ooEgJp7MyQMAd5sque" "AcY9DGdLK8egVrUBS9ipoexuFnmRNjQvdA|0|APVpUBhmUW1GaZhz1wCS5H4Y2RRFnZ8AcE|AX9yMNCKNcinGcdmrehcYbLsXwNUcGUmEM|ac19e80b02d4e8a27feb42073114070a281a2b788ba064803e8064d259b22ebc"
 
 
 
 AWRC4W8ajZ23gZs9ooEgJp7MyQMAd5sque - “collateralAddress” value from the RPC command “protx register_prepare”.
+
 AcY9DGdLK8egVrUBS9ipoexuFnmRNjQvdA|0|APVpUBhmUW1GaZhz1wCS5H4Y2RRFnZ8AcE|AX9yMNCKNcinGcdmrehcYbLsXwNUcGUmEM|ac19e80b02d4e8a27feb42073114070a281a2b788ba064803e8064d259b22ebc - “signMessage” value from the RPC command “protx register_prepare”.
 
 
