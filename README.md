@@ -1,4 +1,4 @@
-### Install a masternode for your coin on Ubuntu Server 22.04 with the following tutorial.
+### Install a masternode for your coin on windows or Ubuntu with the following tutorial.
 
 Open your Windows wallet.
 
